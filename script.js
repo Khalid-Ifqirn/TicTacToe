@@ -48,7 +48,6 @@ const checkWinner = () => {
     else{
         changeTurn();
     }
-    console.log(chosen.length);
 }
 
 const wins = (sameSquares)=>{
@@ -73,6 +72,7 @@ squares.forEach(square => {
     square.textContent = "";
     chosen.length=0
     finished = false
+    title.innerHTML = "X - O <span>Game</span>";
 })
 }
 
